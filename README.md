@@ -1,49 +1,3 @@
-# Data analysis
-- Document here the project: Timely
-- Description: Project Description
-- Data Source:
-- Type of analysis:
-
-Please document the project the better you can.
-
-# Startup the project
-
-The initial setup.
-
-Create virtualenv and install the project:
-```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv ~/venv ; source ~/venv/bin/activate ;\
-    pip install pip -U; pip install -r requirements.txt
-```
-
-Unittest test:
-```bash
-make clean install test
-```
-
-Check for Timely in gitlab.com/{group}.
-If your project is not set please add it:
-
-- Create a new project on `gitlab.com/{group}/Timely`
-- Then populate it:
-
-```bash
-##   e.g. if group is "{group}" and project_name is "Timely"
-git remote add origin git@github.com:{group}/Timely.git
-git push -u origin master
-git push -u origin --tags
-```
-
-Functionnal test with a script:
-
-```bash
-cd
-mkdir tmp
-cd tmp
-Timely-run
-```
-
 # Install
 
 Go to `https://github.com/{group}/Timely` to see the project, manage issues,
@@ -72,3 +26,8 @@ mkdir tmp
 cd tmp
 Timely-run
 ```
+
+# Description
+
+Script use to automate time tracking by getting Data from Jira API query.
+Objective is to generate a CSV to then import it to Google Calendar
